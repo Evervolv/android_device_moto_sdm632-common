@@ -240,9 +240,6 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so \
     vendor/bin/charge_only_mode|libmemset_shim.so
 
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
-
 # Treble
 BOARD_VNDK_VERSION := current
 
