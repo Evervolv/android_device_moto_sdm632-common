@@ -72,8 +72,5 @@
 /(mnt/vendor/persist|persist)/chargeonly(/.*)?           u:object_r:persist_chargeonly_file:s0
 /(vendor|system/vendor)/bin/charge_only_mode             u:object_r:charge_only_exec:s0
 
-#firmware
-/firmware(/.*)?          u:object_r:firmware_file:s0
-
 # tombstones
 /data/vendor/tombstones/rfs(/.*)?      u:object_r:rfs_tombstone_data_file:s0
