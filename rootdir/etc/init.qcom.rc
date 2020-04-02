@@ -564,6 +564,17 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     disabled
     oneshot
 
+service wigignpt /vendor/bin/wigignpt
+    class hal
+    socket wigig/wigignpt stream 660 system wifi
+    user system
+    group wifi
+    capabilities NET_ADMIN
+    disabled
+
+on property:persist.vendor.wigig.npt.enable=1
+    start wigignpt
+
 service vendor.sensingdaemon /vendor/bin/sensingdaemon
     class hal
     socket wigig/sensingdaemon stream 660 system wifi
@@ -741,6 +752,13 @@ service profiler_daemon /system/bin/profiler_daemon
     user root
     group root
     disabled
+
+#service charger /system/bin/charger
+#    class charger
+#    user system
+#    group system graphics input
+#    capabilities SYS_BOOT
+#    seclabel u:r:charger:s0
 
 service qlogd /system/xbin/qlogd
     socket qlogd stream 0662 system system
