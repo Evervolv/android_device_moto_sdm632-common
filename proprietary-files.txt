@@ -145,7 +145,7 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/liboemcrypto.so
-vendor/lib64/libwvhidl.so
+vendor/lib64/libwvhidl.so|bb5e637d9d337fd55adcb9637691e1a92aa135b3
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libhdcpsrm.so
@@ -602,7 +602,7 @@ vendor/lib64/libqmimotext.so
 -vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libril-qc-hal-qmi.so
+vendor/lib64/libril-qc-hal-qmi.so|3c434be6aa1c8b40683e766acf4c87930344fdea 
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
