@@ -25,5 +25,8 @@ motorola_sdm632_init_library_static {
         "system/core/init",
         "system/libbase/include",
         "device/moto/sdm632-common"
+    ],
+    shared_libs: [
+        "libbase",
     ]
 }
