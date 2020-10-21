@@ -202,12 +202,8 @@ BOARD_USES_CAF_LIBJSON := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # NFC / ODM
-ODM_MANIFEST_SKUS := \
-    nfc \
-    nfc-st
-
+ODM_MANIFEST_SKUS := nfc
 ODM_MANIFEST_NFC_FILES := $(PLATFORM_PATH)/odm_manifest_nfc.xml
-ODM_MANIFEST_NFC-ST_FILES := $(PLATFORM_PATH)/odm_manifest_nfc-st.xml
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                  # (BOARD_KERNEL_PAGESIZE * 64)
