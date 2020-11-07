@@ -407,6 +407,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libmemset_shim \
     libcutils_shim \
     libqsap_shim
 

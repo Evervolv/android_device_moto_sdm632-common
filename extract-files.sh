@@ -67,6 +67,11 @@ function blob_fixup() {
         patchelf --add-needed libqsap_shim.so "${2}"
         ;;
 
+    # memset shim
+    vendor/bin/charge_only_mode)
+        patchelf --add-needed libmemset_shim.so "${2}"
+        ;;
+
     # Fix missing symbols
     vendor/lib64/libril-qc-hal-qmi.so)
         patchelf --add-needed "libcutils_shim.so" "${2}"

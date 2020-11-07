@@ -255,7 +255,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy/private
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/libmdmcutback.so|libqsap_shim.so \
     /vendor/lib64/libril-qc-qmi-1.so|libcutils_shim.so \
-    /vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so
+    /vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so \
+    vendor/bin/charge_only_mode|libmemset_shim.so
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
