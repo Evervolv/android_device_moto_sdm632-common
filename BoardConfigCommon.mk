@@ -251,6 +251,12 @@ include device/qcom/sepolicy-legacy/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy/private
 
+#SHIMS
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/libmdmcutback.so|libqsap_shim.so \
+    /vendor/lib64/libril-qc-qmi-1.so|libcutils_shim.so \
+    /vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so
+
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
 
