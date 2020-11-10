@@ -11,3 +11,7 @@ allow init fsg_firmware_file:filesystem getattr;
 allow init hal_perf_default:binder call;
 allow init hal_perf_hwservice:hwservice_manager find;
 allow init vendor_file:file { execute };
+
+allow init hwservicemanager:binder call;
+allow init same_process_hal_file:file execute;
+allow init servicemanager:binder { call transfer };

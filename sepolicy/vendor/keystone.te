@@ -1,0 +1,2 @@
+allow keystore system_data_file:dir { remove_name write read };
+allow keystore system_data_file:file { getattr open read };

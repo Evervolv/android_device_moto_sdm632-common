@@ -51,3 +51,6 @@ allow vendor_toolbox {
 
 allow vendor_toolbox media_rw_data_file:file getattr;
 allow vendor_toolbox persist_hvdcp_file:file getattr;
+
+allow vendor_toolbox persist_chargeonly_file:dir { getattr open read setattr };
+allow vendor_toolbox persist_chargeonly_file:file getattr;
