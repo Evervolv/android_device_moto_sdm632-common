@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
     libbson.vendor \
     libxml2 \
     Snap \
-    android.frameworks.displayservice@1.0.vendor
+    android.frameworks.displayservice@1.0.vendor \
+    vendor.qti.hardware.camera.device@1.0:64
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
