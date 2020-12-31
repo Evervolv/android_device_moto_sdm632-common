@@ -31,8 +31,8 @@ vendor.boot_completed      u:object_r:moto_boot_prop:s0
 
 ro.telephony.bypass.signalstrenthreporting    u:object_r:vendor_radio_prop:s0
 
+ro.boot.hwrev              u:object_r:hwrev_prop:s0
 ro.vendor.hw.hwrev         u:object_r:hwrev_prop:s0
-ro.vendor.boot.hwrev       u:object_r:hwrev_prop:s0
 
 # property related to aov
 vendor.hw.aov.                    u:object_r:vendor_aov_prop:s0
