@@ -25,3 +25,6 @@ get_prop(vendor_init, hwrev_prop)
 set_prop(vendor_init, hwrev_prop)
 
 allow vendor_init media_rw_data_file:file getattr;
+
+get_prop(vendor_init, hwrev_prop)
+set_prop(vendor_init, hwrev_prop)
