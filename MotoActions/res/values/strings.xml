@@ -98,7 +98,7 @@
     <string name="switch_bar_off">Off</string>
 
     <!-- Device actions -->
-    <string name="actions_title">Actions</string>
+    <string name="actions_title">ACTIONS</string>
 
     <!-- Camera gesture -->
     <string name="camera_gesture_title">Double-twist</string>

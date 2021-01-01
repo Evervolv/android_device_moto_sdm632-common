@@ -17,17 +17,42 @@
 package com.dirtyunicorns.settings.device;
 
 import android.os.Bundle;
-
 import android.preference.PreferenceActivity;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragment;
+import android.view.MenuItem;
 
 public class DozeSettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (savedInstanceState == null){
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new DozeSettingsFragment()).commit();
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new DozePreferenceFragment()).commit();
+    }
+
+    public static class DozePreferenceFragment extends PreferenceFragment {
+        private static final String CATEGORY_AMBIENT_DISPLAY = "ambient_display_key";
+
+        @Override
+        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+            addPreferencesFromResource(R.xml.doze_panel);
+            boolean dozeEnabled = MotoActionsSettings.isDozeEnabled(getActivity().getContentResolver());
+            PreferenceCategory ambientDisplayCat = (PreferenceCategory)
+                    findPreference(CATEGORY_AMBIENT_DISPLAY);
+            if (ambientDisplayCat != null) {
+                ambientDisplayCat.setEnabled(dozeEnabled);
+            }
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
