@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.settings.device;
+package com.moto.actions;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class TouchscreenGestureSettings extends PreferenceActivity {
+public class ActionsPreferenceActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

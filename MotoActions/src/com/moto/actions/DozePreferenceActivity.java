@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.settings.device;
+package com.moto.actions;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
@@ -22,7 +22,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import android.view.MenuItem;
 
-public class DozeSettingsActivity extends PreferenceActivity {
+public class DozePreferenceActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,8 @@ public class DozeSettingsActivity extends PreferenceActivity {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             addPreferencesFromResource(R.xml.doze_panel);
-            boolean dozeEnabled = MotoActionsSettings.isDozeEnabled(getActivity().getContentResolver());
+            boolean dozeEnabled = MotoActionsSettings.isDozeEnabled(getActivity());
+            boolean aodEnabled = MotoActionsSettings.isAODEnabled(getActivity());
             PreferenceCategory ambientDisplayCat = (PreferenceCategory)
                     findPreference(CATEGORY_AMBIENT_DISPLAY);
             if (ambientDisplayCat != null) {
