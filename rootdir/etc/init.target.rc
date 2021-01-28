@@ -83,6 +83,7 @@ on late-fs
     # Start services for bootanim
     start servicemanager
     start surfaceflinger
+    start boot_theme
     start bootanim
 
     start vendor.configstore-hal
