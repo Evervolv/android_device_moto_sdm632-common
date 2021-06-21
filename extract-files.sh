@@ -80,6 +80,16 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
             done
             ;;
+        # Move to vendor
+        vendor/etc/permissions/com.motorola.motosignature.xml)
+            sed -i 's|/system/framework|/vendor/framework|' "${2}"
+            ;;
+        # Fix missing symbols
+        vendor/lib/libmot_gpu_mapper.so)
+            for LIBGUI_SHIM in $(grep -L "libgui_shim_vendor.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libgui_shim_vendor.so" "${LIBGUI_SHIM}"
+            done
+            ;;
         # qsap shim
         vendor/lib64/libmdmcutback.so)
             for  LIBQSAP_SHIM in $(grep -L "libqsap_shim.so" "${2}"); do
