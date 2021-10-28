@@ -68,6 +68,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
+# SD Card Encryption
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.contents_mode=ice \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
