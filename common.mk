@@ -127,7 +127,9 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl:32 \
     libbson.vendor \
     libxml2 \
-    Snap
+    Snap \
+    android.frameworks.displayservice@1.0.vendor \
+    libgpu_mapper_shim
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -433,7 +435,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmemset_shim \
     libcutils_shim \
-    libqsap_shim
+    libqsap_shim \
+    lib-imsvt
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \

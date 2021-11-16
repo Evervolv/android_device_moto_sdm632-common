@@ -234,7 +234,9 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/libmdmcutback.so|libqsap_shim.so \
     /vendor/lib64/libril-qc-qmi-1.so|libcutils_shim.so \
     /vendor/lib/libril-qc-qmi-1.so|libcutils_shim.so \
-    vendor/bin/charge_only_mode|libmemset_shim.so
+    vendor/bin/charge_only_mode|libmemset_shim.so \
+    /system/product/lib64/lib-imsvideocodec.so|lib-imsvt.so \
+    /vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so
 
 # Treble
 BOARD_VNDK_VERSION := current
