@@ -108,7 +108,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl:32 \
     libbt-vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0.vendor \
+    libldacBT_bco
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
