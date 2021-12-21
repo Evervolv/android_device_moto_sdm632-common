@@ -286,8 +286,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service-qti.rc \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.0.vendor
 
 # LED packages
 PRODUCT_PACKAGES += \
@@ -420,13 +419,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.0.vendor \
-    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.2.vendor
 
 # Recovery
