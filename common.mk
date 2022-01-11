@@ -72,10 +72,6 @@ PRODUCT_PACKAGES += \
     bootctrl.msm8953 \
     bootctrl.msm8953.recovery
 
-# Board
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := msm8953
-
 # APEX
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
@@ -113,12 +109,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.1-impl:32 \
     libbt-vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    android.hardware.bluetooth@1.0.vendor \
     libldacBT_bco
 
 # Boot animation
@@ -139,8 +134,7 @@ PRODUCT_PACKAGES += \
     libbson.vendor \
     libxml2 \
     Snap \
-    android.frameworks.displayservice@1.0.vendor \
-    libgpu_mapper_shim
+    android.frameworks.displayservice@1.0.vendor
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -175,11 +169,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor
+    android.hardware.drm@1.4-service.clearkey
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -191,17 +181,16 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.biometrics.fingerprint@2.1.vendor
-
-# Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
 
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
+
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -420,8 +409,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.radio.deprecated@1.0.vendor
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
@@ -447,10 +435,10 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libgui_shim \
+    libgui_shim_vendor \
     libmemset_shim \
-    libcutils_shim \
-    libqsap_shim \
-    lib-imsvt
+    libcutils_shim
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
@@ -496,8 +484,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libgui_vendor:32 \
     vndk_package
-
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Wifi
 PRODUCT_COPY_FILES += \
