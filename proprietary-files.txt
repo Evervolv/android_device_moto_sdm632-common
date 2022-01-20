@@ -771,6 +771,7 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.rp.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/activity_recognition.msm8953.so
+vendor/lib/sensors.ssc.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor1.so
 vendor/lib64/sensor_calibrate.so
