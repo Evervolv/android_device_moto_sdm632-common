@@ -133,7 +133,6 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl:32 \
     libbson.vendor \
     libxml2 \
-    Snap \
     android.frameworks.displayservice@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
