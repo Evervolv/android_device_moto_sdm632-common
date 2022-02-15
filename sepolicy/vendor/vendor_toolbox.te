@@ -48,9 +48,3 @@ allow vendor_toolbox {
     persist_time_file
     sensors_persist_file
 }:file { r_file_perms setattr };
-
-allow vendor_toolbox media_rw_data_file:file getattr;
-allow vendor_toolbox persist_hvdcp_file:file getattr;
-
-allow vendor_toolbox persist_chargeonly_file:dir { getattr open read setattr };
-allow vendor_toolbox persist_chargeonly_file:file getattr;

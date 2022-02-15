@@ -1,2 +1,0 @@
-#============= gatekeeperd ==============
-allow gatekeeperd system_data_file:file { open read };

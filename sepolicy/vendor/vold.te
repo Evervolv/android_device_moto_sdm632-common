@@ -1,3 +1,2 @@
 #============= vold ==============
-allow vold system_data_file:file { ioctl open getattr };
-allow vold sysfs_mmc_host:file write;
+allow vold system_data_file:file { ioctl open };
