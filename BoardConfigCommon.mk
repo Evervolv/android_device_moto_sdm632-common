@@ -144,9 +144,6 @@ TARGET_HAS_HDR_DISPLAY := true
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Dynamic partitions
 BOARD_SUPER_PARTITION_GROUPS := moto_dynamic_partitions
 BOARD_MOTO_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
