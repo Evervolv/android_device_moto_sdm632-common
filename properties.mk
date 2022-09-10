@@ -94,6 +94,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
+    debug.renderengine.backend=skiaglthreaded \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
     debug.sf.recomputecrop=0 \
