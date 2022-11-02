@@ -9,13 +9,6 @@ unix_socket_connect(hal_audio_default, property, init)
 allow hal_audio_default self:binder { call transfer };
 allow hal_audio_default self:fd use;
 
-allow hal_audio_default input_device:dir search;
-allow hal_audio_default input_device:chr_file { ioctl open read };
-allow hal_audio_default sysfs:dir { open read };
-allow hal_audio_default sysfs:file { open read };
-allow hal_audio_default sysfs_sensor:dir search;
-allow hal_audio_default sysfs_sensor:file { open read };
-
 allow hal_audio_default cutback_socket:sock_file write;
 allow hal_audio_default fwk_sensor_hwservice:hwservice_manager find;
 allow hal_audio_default input_device:dir search;
