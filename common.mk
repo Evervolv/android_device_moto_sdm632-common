@@ -270,7 +270,8 @@ PRODUCT_PACKAGES += \
 
 # MotoActions
 PRODUCT_PACKAGES += \
-    MotoActions
+    MotoActions \
+    MotoCommonOverlay
 
 # LMKD Enable stats logging
 TARGET_LMKD_STATS_LOG := true
