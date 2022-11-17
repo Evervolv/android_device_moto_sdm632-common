@@ -50,12 +50,6 @@
     <!-- Turn on LiveDisplay auto mode by default -->
     <integer name="config_defaultLiveDisplayMode">0</integer>
 
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">true</bool>
-
-    <!-- Whether device has a screen with a higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
-
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system/priv-app/MotoActions/MotoActions.apk</item>
     </string-array>

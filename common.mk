@@ -264,7 +264,6 @@ PRODUCT_PACKAGES += \
 # LED packages
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8953
-
 # MotoActions
 PRODUCT_PACKAGES += \
     MotoActions \
